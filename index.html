@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/logo-2.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>Yours Enterprise</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-zone wrapper-padding">
+        <div class="header content-max-width">
+          <a href="#"
+            ><img class="logo" alt="yours logo" src="img/logo2.png"
+          /></a>
+          <nav class="main-nav">
+            <div class="main-menu">
+              <span
+                class="hover-line"
+                id="navbarHoverLine"
+                style="left: 0; width: 0; opacity: 0"
+              ></span>
+              <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#services">Services</a></li>
+                <li><a class="main-nav-link" href="#products">Products</a></li>
+                <li><a class="main-nav-link" href="#history">History</a></li>
+                <li>
+                  <a class="main-nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-free-consult">
+              <ul class="free-consult-button">
+                <li>
+                  <a class="main-nav-link nav-cta" href="#consult"
+                    >Free Consultation</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- 
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button> -->
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="section-hero">
+        <div class="content-max-width">
+          <div class="herobanner">
+            <div class="herobanner-text">
+              <h1 class="herobanner-title super">
+                Our Business is to Grow
+                <span class="blue-500 super">YOURS.</span>
+              </h1>
+              <p class="herobanner-subtitle">
+                From manufacturing and sourcing to quality control and shipping
+                logistics &mdash; all-in-one service solutions provider.
+              </p>
+              <div class="cta-container">
+                <form class="cta-form" name="cta-business-email" netlify>
+                  <div class="email-input">
+                    <label for="email"></label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="Business Email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <button class="btn btn--form cta-btn">Consult</button>
+                </form>
+              </div>
+              <div class="form-agreement">
+                <p class="form-agreement-text">
+                  By submitting this form, you are agreeing to our Privacy
+                  Policy and Terms of Service.
+                </p>
+              </div>
+              <div class="company-logos-section">
+                <div class="center-element">
+                  <p class="eyebrow">Some of our most beloved clients.</p>
+                </div>
+                <div class="company-logos">
+                  <img src="img/clients/macys.png" alt="macys logo" />
+                  <img src="img/clients/jcp.png" alt="jcpenney logo" />
+                  <img src="img/clients/hollister.png" alt="hollister logo" />
+                  <img src="img/clients/skechers.png" alt="skechers logo" />
+                  <img src="img/clients/carters.png" alt="macys logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-services wrapper-padding" id="services">
+        <div class="contextn-max-width"></div>
+        <div class="header-content">
+          <div class="header-text">
+            <h2 class="section-title">
+              Vertically integrated service based in Taiwan.
+            </h2>
+            <div>
+              <p class="section-text">
+                Get all your textile needs in one place. We do it so you don't
+                have to.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2-items-list content-max-width">
+          <a class="services-card" href="#">
+            <div>
+              <div class="services-card-title">
+                <h2>Sourcing</h2>
+              </div>
+            </div>
+            <p class="services-card-text">
+              From our vast database of trustworthy and reliable factories, we
+              will find the best manufacturing partner for you.
+            </p>
+            <p class="services-card-link">
+              Find Manufacturer Now
+              <ion-icon
+                class="arrow-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </p>
+          </a>
+          <a class="services-card" href="#">
+            <div>
+              <div class="services-card-title">
+                <h2>Cost and Time</h2>
+              </div>
+            </div>
+            <p class="services-card-text">
+              With tight-knit relationship with our factories, we obtain highly
+              competitive prices and make sure all products delivered to you on
+              time.
+            </p>
+            <p class="services-card-link">
+              Save Cost and Time<ion-icon
+                class="arrow-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </p>
+          </a>
+          <a class="services-card" href="#">
+            <div>
+              <div class="services-card-title">
+                <h2>Quality</h2>
+              </div>
+            </div>
+            <p class="services-card-text">
+              With our highly experienced quality control inspectors, you are
+              gauranteed to have high quality products.
+            </p>
+            <p class="services-card-link">
+              Quality Assured<ion-icon
+                class="arrow-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </p>
+          </a>
+          <a class="services-card" href="#">
+            <div>
+              <div class="services-card-title">
+                <h2>Logistics</h2>
+              </div>
+            </div>
+            <p class="services-card-text">
+              Our logistics experts will make sure shipping is smooth without
+              any delay.
+            </p>
+            <p class="services-card-link">
+              Easy and Efficient<ion-icon
+                class="arrow-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </p>
+          </a>
+        </div>
+      </section>
+      <section class="section-products wrapper-padding" id="products">
+        <div class="header-content">
+          <div class="header-text">
+            <h2 class="section-title">
+              A small collection of what we can make.
+            </h2>
+            <div>
+              <There class="section-text">
+                If you don't see your product, don't worry! There are plenty
+                more we are capable of.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="product-imgs grid-3-items-list">
+            <figure class="product-img"><img src="img/products/in_pro01.jpg" alt="fabric image"/><div class="product-desc">fleece</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro01-3.jpg" alt="fabric image"/> <div class="product-desc">microplush</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro02-1.jpg" alt="fabric image"/><div class="product-desc">printed</div> </figure>
+          <figure class="product-img"><img src="img/products/in_pro02-2.jpg" alt="fabric image"/> <div class="product-desc">silk</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro02-3.jpg" alt="fabric image"/> <div class="product-desc">sherpa</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro03-3.jpg" alt="fabric image"/> <div class="product-desc">jersey knit</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro03.jpg" alt="fabric image"/> <div class="product-desc">faux fur</div></figure>
+          <figure class="product-img"><img src="img/products/in_pro02.jpg" alt="fabric image"/> <div class="product-desc">jacquard</div></figure>
+          <figure class="product-img"><img src="img/products/wool.avif" alt="fabric image"/> <div class="product-desc">wool</div></figure>
+        </div>
+      </section>
+      <section class="section-history" id="history">
+        <div class="content-max-width text-center">
+          <div class="wrapper-padding history-title">
+            <h2 class="title">Our History and Who We Are<span class="blue-500">.</span></h2>
+          </div>
+        </div>
+        <div class="history-wrapper-container">
+          <section class="horizontal-gradient-border default-gradient-bg"></section>
+          <div class="wrapper-padding">
+            <div class="swiper-slide">
+              <div class="history-content-container">
+                <div class="history-default">
+                  <div class="history-one">
+                    <div class="history-text-block">
+                      <div><h3>A Business Based on Trust and Reliability.</h3>
+                      <p class="p-large">
+                        Since the establishment in 1983, Yours Enterprise Co. Ltd. has dedicated itself to a world leading manufacturer and Trader in “Textile”.
+               
+                        To enable the satisfaction to our clients on quality, we are devoted to conform and unify the different levels of production to ensure quality.
+                        
+                        We have a comprehensive team of QA personnels live at the production site, stand by at all times from raw material acquiring to finish goods to ensure top notch quality and meet customer deadlines.</p></div>
+                        <div class="founder">
+                          <h6>Debbie Ting</h6>
+                          <p class="p-small job-title">Founder and CEO</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="history-cta">
+                  <p class="history-cta-title">30Y+</p>
+                  <p class="history-cta-content">With over 30 years experience, we are here to provide solutions to your textile needs</p>
+                  <div class="history-cta-link">Consult Us Now<ion-icon
+                    class="arrow-icon"
+                    name="arrow-forward-outline"
+                  ></ion-icon></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta-map" id="contact">
+        <div class="container">
+          <div class="cta-map">
+            <div class="cta-textbox-map">
+              <h2 class="heading-secondary cta-heading">
+                Let's Get In Touch!
+              </h2>
+              <p class="cta-text-map">
+                If you'd like to know more, please
+                fill out the form below and we will get back to you within 24hrs.
+              </p>
+              <form class="cta-form-map" name="contact-us" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear about us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose an option</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Consult now</button>
+              </form>
+            </div>
+
+          <div id="map"></div>
+
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-column">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="yours logo" src="img/logo2.png" />
+            </a>
+  
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; <span class="year">2027</span> by Yours Enterprise All
+              rights reserved
+            </p>
+          </div>
+          <div class="address-column">
+            <p class="footer-heading">Contact Us</p>
+            <address class="contacts">
+              <p class="address">
+                Tiding Blvd. Section 2, No.477, 2Fl. 114 Neihu District, Taipei, Taiwan
+              </p>
+              <br />
+              <p>
+                <a class="footer-link" href="tel:02-2797-7717">(+886)02-2797-7717</a
+                ><br />
+                <a class="footer-link" href="mailto:service@yoursco.com"
+                  >service@yoursco.com</a
+                >
+              </p>
+            </address>
+          </div>
+          <nav class="nav-column">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Yours</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Our Investors</a></li>
+              <li><a class="footer-link" href="#">Wholesale</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-column">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">News</a></li>
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      
+    </main>
+  </body>
+</html>
