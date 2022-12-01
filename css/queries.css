@@ -1,0 +1,161 @@
+/****************************/
+/* BELOW 1030px (laptops) 64em breakpoint */
+/****************************/
+
+@media (max-width: 70em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* MOBILE NAV */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAV */
+    /* Does not allow transitions */
+    /* display: none; */
+
+    /* 1. Hide it visually */
+    opacity: 0;
+
+    /* Make it unaccessible to mouse and kb */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin-top: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    border-bottom: 2px solid #145896;
+  }
+
+  .nav-cta {
+    font-size: 3rem !important;
+  }
+}
+
+/****************************/
+/* BELOW 814px (tablets) 51em breakpoint */
+/****************************/
+
+@media (max-width: 51em) {
+  .history-content-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .swiper-slide {
+    margin-left: auto;
+  }
+
+  .history-cta {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/****************************/
+/* BELOW 544px (large phones) 34em breakpoint */
+/****************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .form-agreement-text {
+    text-align: center;
+  }
+
+  .grid-items-list-products {
+    display: grid;
+    grid-gap: 5.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+  }
+
+  .cta-map {
+    grid-template-columns: 1fr;
+  }
+
+  #map {
+    grid-row: 2;
+    height: 42rem;
+  }
+}
+
+/****************************/
+/* BELOW 445px (medium phones) 27em breakpoint */
+/****************************/
+
+@media (max-width: 27em) {
+  .herobanner-subtitle {
+    width: auto;
+  }
+  .services-card-link {
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .product-desc {
+    font-size: 3.2rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-2-items-list {
+    display: grid;
+    grid-gap: 5.2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+}
