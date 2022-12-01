@@ -247,8 +247,7 @@
 
 .services-card {
   width: 100%;
-  /* background-color: #e8f2fb; */
-  /* border: 0.1rem solid #dae0ec; */
+  background-color: #fff;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 20px;
   padding: 3.2rem;
@@ -396,6 +395,7 @@
 }
 
 .history-text-block {
+  background-color: #fff;
   padding: 4.8rem;
   display: flex;
   flex-direction: column;
