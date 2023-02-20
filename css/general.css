@@ -191,3 +191,7 @@ a {
   line-height: 2.6rem;
   font-weight: 500;
 }
+
+ion-icon {
+  pointer-events: none;
+}

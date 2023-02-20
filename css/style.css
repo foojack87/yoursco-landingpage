@@ -268,23 +268,32 @@
 }
 
 .services-card-link {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  margin-top: 3.2rem;
-  margin-right: 1.6rem;
   color: #1971c1;
   font-weight: 600;
   line-height: 2.8;
 }
 
-.services-card-link .arrow-icon:hover {
+.services-link-section {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon:hover {
   transform: translateX(1.2rem);
   transition: all 0.4s ease-in-out;
 }
+
+/* .services-card-link,
+.arrow-icon:hover {
+  transform: translateX(1.2rem);
+  transition: all 0.4s ease-in-out;
+} */
+
 .arrow-icon {
   width: 2.4rem;
   height: 2.4rem;
+  color: #1971c1;
 }
 
 /****************************/
