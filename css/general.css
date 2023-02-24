@@ -70,6 +70,24 @@ h2 {
   color: #145896;
 }
 
+.animated-text {
+  display: inline-block;
+  animation: moveInRight 1.5s ease-in;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .btn,
 .btn:link,
 .btn:visited {
