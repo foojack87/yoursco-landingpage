@@ -277,6 +277,7 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  margin-top: 1rem;
 }
 
 .icon:hover {
@@ -330,10 +331,6 @@
   transition: all 0.4s;
 }
 
-.product-img img:hover {
-  transform: scale(1.05);
-}
-
 .product-imgs {
   max-width: 144rem;
 }
@@ -345,15 +342,27 @@
   border-radius: 9px;
 }
 
+.product-img img:hover {
+  filter: blur(3px) brightness(80%);
+  transform: scale(1.1);
+}
+
+.product-img:hover .product-desc {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
 .product-desc {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 10%);
   font-size: 4.8rem;
   text-transform: uppercase;
-  color: #1971c1;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0;
+  transition: all 0.8s;
 }
 
 /****************************/
@@ -483,7 +492,7 @@
 
 .section-cta-map {
   padding: 4.8rem 0 12.8rem;
-  background-color: #555;
+  background-image: linear-gradient(to right, #1970c136, #eeeeee49);
 }
 
 .container {
